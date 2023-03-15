@@ -1,0 +1,16 @@
+.app-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding: 0px 15px !important;
+    background-image: linear-gradient(to right, #a90f0f , #f3f3f5);
+}
+.logo{
+    width:100px;
+    height: 50px;
+}
+.menu-block {
+    width: 90%;
+    padding: 0px 10px;
+}

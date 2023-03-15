@@ -1,0 +1,35 @@
+.menu-list{
+    flex-direction: row;
+    padding-left: 15px !important;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.menu-bar{
+    padding-left: 3px;
+    padding-right: 15px;
+}
+.menu-item{
+    padding-right: 5px;
+    width: 100px;
+}
+.menu-item .nav-link:hover{
+    color:#000 !important;
+    cursor: pointer;
+    background: #f3f3f5;
+}
+.menu-item .nav-link{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 0px;
+    padding-bottom:0px !important;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.menu-item .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #eba70d;
+    font-weight: 500;
+}
