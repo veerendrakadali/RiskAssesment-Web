@@ -1,0 +1,117 @@
+{
+  "formId":1,
+  "form_title":"Inherent Risk Questionaire",
+  "section_title":"100001 - payment(Card Products)",
+  "scope_period_start":"2023-03-12T15:00:20.012Z",
+  "scope_period_end":"2023-03-16T15:00:20.012Z",
+  "version":"1.0",
+  "last_updated_time":"2023-03-14T15:00:20.012Z",
+  "overall_stats_percent":"100.00%",
+  "form_status":"completed",
+  "overall_stats":{
+    "overall_percent":"100.00%",
+    "customer_percent":"100.00%",
+    "products_service_percent":"100.00%",
+    "channels_percent":"100.00%",
+    "other_risk_factors_percent":"100.00%"
+  },
+  "graphical_view_data":{
+    "chart_type":"bar",
+    "chart_title":"",
+    "chart_legends":[],
+    "chart_xaxis":[],
+    "chart_yaxis":[]
+  },
+  "column_headers":[
+    {
+      "name":"category",
+      "desc":"Category",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"sub-category",
+      "desc":"Sub - Category",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"ref",
+      "desc":"Ref",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"data-attributes",
+      "desc":"Data Attributes",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"data-sales",
+      "desc":"Data Sales",
+      "split_column":1,
+      "info":""
+    },
+    {
+      "name":"data-type",
+      "desc":"Data Type",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"source-systems",
+      "desc":"Source Systems",
+      "split_column":0,
+      "info":"(Please )"
+    },
+    {
+      "name":"source-part",
+      "desc":"Source Bepart",
+      "split_column":0,
+      "info":""
+    },
+    {
+      "name":"preparedBy",
+      "desc":"Prepared By",
+      "split_column":0,
+      "info":"(Please )"
+    }
+  ],
+  "multipleCardSections":[
+    {
+      "sectionId":1,
+      "sequenceId":1,
+      "split_row":5,
+      "cardFields":[
+        {
+          "sectionId":1,
+          "sequenceId":1,
+          "type":"TEXT",
+          "name":"category",
+          "label":"",
+          "value":"",
+          "defaultValue":""
+        },
+        {
+          "sectionId":2,
+          "sequenceId":2,
+          "type":"TEXT",
+          "name":"sub-category",
+          "label":"",
+          "value":"",
+          "defaultValue":""
+        },
+        {
+          "sectionId":3,
+          "sequenceId":3,
+          "type":"TEXT",
+          "name":"sub-category",
+          "label":"",
+          "value":"",
+          "defaultValue":""
+        }
+      ]
+    }
+  ]
+}

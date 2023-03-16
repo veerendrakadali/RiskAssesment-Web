@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormService } from 'src/app/services/form.service';
 
 @Component({
   selector: 'app-inherent-risk-ass-form',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InherentRiskAssFormComponent implements OnInit {
 
-  constructor() { }
+  formData:any=null;
+  constructor(private formService:FormService) { }
 
   ngOnInit(): void {
+    this.getData();
+  }
+
+  getData(){
+    this.formService.getJSONData().subscribe(res=>{
+      this.formData=res;
+    });
   }
 
 }

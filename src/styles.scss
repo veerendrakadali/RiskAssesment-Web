@@ -7,6 +7,24 @@ body { margin: 0; font-family: 'Roboto';}
 @import '~bootstrap/scss/bootstrap';
 @import '~material-design-icons/iconfont/material-icons.css';
 
+@font-face {
+    font-family: "Open-Sans";
+    src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Open-Sans-Medium";
+    src: url("./assets/fonts/OpenSans/OpenSans-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open-Sans-Bold";
+    src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: "'Open Sans Bold', 'Open Sans', sans-serif";

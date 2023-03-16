@@ -1,6 +1,9 @@
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule, LocationStrategy, HashLocationStrategy, DatePipe, CurrencyPipe } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +20,14 @@ import { DefaultLayoutContainerComponent } from './container/default-layout-cont
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
+  exports:[
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

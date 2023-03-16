@@ -9,6 +9,6 @@ export class FormService {
   constructor(private httpClient:HttpClient) { }
 
   getJSONData(){
-    return this.httpClient.get('assets/jsons/vendor.json');
+    return this.httpClient.get('assets/jsons/inherent-risk-assesment-questionaire.json');
   }
 }
