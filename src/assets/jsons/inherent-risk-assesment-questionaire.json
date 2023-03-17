@@ -154,8 +154,8 @@
             "value":"",
             "defaultValue":"",
             "placeholder":"",
-            "isDisabled":true,
-            "styleClass":"grey-background"
+            "isDisabled":false,
+            "styleClass":""
         },
         {
             "sectionId":6,
