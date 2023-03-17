@@ -1,5 +1,5 @@
-<div class="col-md-12 p-0">
-    <div class="col-md-12 row m-0 p-0" *ngIf="formData!=null">
+<div class="col-md-12 p-0" *ngIf="formData!=null">
+    <div class="col-md-12 row m-0 stats-block-row">
         <div class="col-md-3">
             <div class="left-block-stats">
                 <div class="logo-title">
@@ -20,10 +20,83 @@
             </div>
         </div>
         <div class="col-md-3">
-            
+            <div class="chart-block-stats">
+                <div class="chart-block">
+                    <app-doughnut-chart></app-doughnut-chart>
+                </div>
+                <div class="chart-stats" *ngIf="formData.overall_stats.length>0">
+                    <table class="table-bordered stats-table">
+                        <tr *ngFor="let list of formData.overall_stats;">
+                            <td class="stats-label-td">{{list.label}}</td>
+                            <td class="stats-label-value">{{list.value}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-            
+        <div class="col-md-6">
+            <div class="bar-chart-block">
+                <app-bar-chart></app-bar-chart>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 p-0">
+        <div class="section-title">
+            {{formData.section_title}}
+        </div>
+    </div>
+    <div class="col-md-12 p-0">
+        <div class="formdata-table-block" *ngIf="formData.column_headers.length>0">
+            <table class="table-bordered formData-table">
+                <thead>
+                    <tr>
+                        <ng-container *ngFor="let thead of formData.column_headers">
+                            <th [ngStyle]="{width:thead.width}" [attr.colspan]="thead.split_column!=null ? thead.split_column : ''">{{thead.desc}}</th>
+                        </ng-container>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container *ngFor="let formSection of formData.multipleCardSections; let i=index;">
+                        <tr>
+                            <ng-container *ngFor="let formField of formSection.cardFields; let j=index;">
+                                
+                                    <ng-container  
+                                    [ngTemplateOutlet]="templateField"
+                                    [ngTemplateOutletContext]="{field:formField}"></ng-container>
+                            </ng-container>
+                        </tr> 
+                    </ng-container>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+
+<ng-template #templateField let-field='field'>
+    <td class="{{field.styleClass}}" [attr.rowspan]="field.split_row">
+    <ng-container [ngSwitch]="field.type">
+        <div *ngSwitchCase="'EMPTY'"></div>
+        <div *ngSwitchCase="'TEXT'">
+            <div class="label-text">{{field.value}}</div>
+            <div class="new-record" *ngIf="field.isInfoText">{{field.isInfoText}}</div>
+        </div>
+        <div *ngSwitchCase="'TEXTBOX'">
+            <div class="label-input">
+                <div class="{{field.isInfoStyleClass}}" *ngIf="field.isInfoText">{{field.isInfoText}}</div>
+                <input type="text" [disabled]="field.isDisabled" name="{{field.name}}" 
+                    [(ngModel)]="field.value" class="form-control no-border-radius" 
+                    placeholder="{{field.placeholder}}"/>
+            </div>
+        </div>
+        <div *ngSwitchCase="'NUMBERTEXTBOX'">
+            <div class="label-input">
+                <div  class="{{field.isInfoStyleClass}}" *ngIf="field.isInfoText">{{field.isInfoText}}</div>
+                <input type="text" *ngIf="!field.isDisabled" [disabled]="field.isDisabled" name="{{field.name}}"
+                    prefix="$" thousandSeparator=","  mask="separator.2"
+                    [(ngModel)]="field.value" class="form-control no-border-radius right-align" 
+                    placeholder="{{field.placeholder}}"/>
+            </div>
+        </div>
+    </ng-container>
+    </td>
+</ng-template>

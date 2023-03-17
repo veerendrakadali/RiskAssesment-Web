@@ -20,5 +20,5 @@ export class InherentRiskAssFormComponent implements OnInit {
       this.formData=res;
     });
   }
-
+  
 }

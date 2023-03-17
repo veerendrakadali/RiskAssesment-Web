@@ -1,5 +1,9 @@
 .left-block-stats {
     width: 100%;
+    position: relative;
+    height:100%;
+    display: flex;
+    flex-direction: column;
 }
 .logo-title {
     width: 100%;
@@ -18,10 +22,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 14%;
+    height: 40%;
 }
 .left-form-title {
     width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 .form-title {
     font-size: 18px;
@@ -32,4 +38,112 @@
     font-size: 14px;
     color: #ad1315;
     font-weight: 400;
+}
+.chart-block-stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -15%;
+}
+.chart-block {
+    width: 200px;
+}
+.bar-chart-block{
+    width: 100%;
+}
+.stats-block-row{
+    padding:10px 0px;
+    background-color: #fbfbfb;
+}
+.chart-stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.stats-table{
+    border:0px !important;
+}
+.stats-label-td{
+    border-width: 0px;
+    padding: 3px 10px;
+    font-size: 13px;
+}
+.stats-label-value{
+    background: #f1abb8;
+    color: #b12828;
+    min-width: 135px;
+    box-shadow: 3px 3px 3px 0px #efecec;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.section-title{
+    background:grey;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    width:100%;
+    border:2px solid #000;
+    border-width: 2px 0px;
+}
+.formdata-table-block{
+    width:100%;
+}
+.formData-table{
+    width:100%;
+}
+.formData-table thead th{
+    padding: 5px 5px;
+    background: #ccc;
+    border:2px solid #000;
+    text-align: center;
+    font-size: 13px;
+}
+.formData-table tbody td{
+    border:2px solid #000;
+}
+.label-text{
+    font-size: 13px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.no-border-radius{
+    border-radius: 0px;
+}
+.grey-background {
+    background: #808080;
+    color: #fff;
+}
+.form-control:disabled{
+    background: #808080;
+    border:0px !important;
+}
+.red-background{
+    background: red;
+    color: #fff;
+}
+.blue-background{
+    font-size: 12px;
+    background: #00adff;
+    color: #fff;
+    text-align: center;
+}
+.label-input{
+    display:flex;
+    min-width: 135px;
+}
+.yellow-background {
+    font-size: 12px;
+    background: yellow;
+    text-align: center;
+}
+.right-align{
+    text-align: right;
+}
+.new-record{
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
 }
