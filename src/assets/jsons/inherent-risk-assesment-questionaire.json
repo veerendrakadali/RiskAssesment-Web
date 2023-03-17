@@ -1141,7 +1141,7 @@
               "defaultValue":"",
               "placeholder":"",
               "isDisabled":true,
-              "styleClass":""
+              "styleClass":"grey-background"
           },
           {
               "sectionId":7,
