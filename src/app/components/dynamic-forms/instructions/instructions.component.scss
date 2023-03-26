@@ -1,0 +1,133 @@
+.stats-block-row {
+    display: flex;
+}
+.logo-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.version-info {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.title-block-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+}
+.section-title {
+    font-size: 34px;
+    font-weight: 600;
+    text-shadow: 2px 0px 3px black;
+}
+.section-note {
+    font-size: 18px;
+    font-weight: 600;
+}
+.notes-average-block {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-title {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.average-block {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border: 5px solid #b02424;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.average-info {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+}
+.percent-info {
+    color: #b02424;
+    font-size: 16px;
+    font-weight: 600;
+}
+.percent-value {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.steps-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 18px;
+    margin-top: 15px;
+}
+.steps-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.label-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.label-value {
+    width: 92%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.steps-table {
+    margin-top: 8px;
+    width: 100%;
+}
+table.table-border.steps-table {
+    border: 1px solid #000;
+}
+table.table-border.steps-table tbody th{
+    text-align: center;
+    width: 100px;
+    border: 1px solid #000;
+    padding: 8px;
+    background: #ccc;
+}
+table.table-border.steps-table tbody td{
+    background: yellow;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #000;
+}
+.notes-info{
+    margin-top:5px;
+    background: yellow;
+    font-size: 14px;
+    font-weight: 700;
+    padding:2px 5px;
+}
+.sky-blue{
+    color:#05a6f3;
+}
+.bold-underline-text{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.step-4-info{
+    background: yellow;
+    font-size: 14px;
+    font-weight: 600;
+    padding:2px 5px;
+    border:2px solid #b02424;
+}
